@@ -53,19 +53,27 @@
         p {
             color: #343434;
         }
-        
-        
+
+        .contenedor-iconos-section {
+            background-color: #f8f8f8;
+        }
+
+        .contenedor-iconos-section h2 {
+            padding: 0.83em;
+            padding-bottom: 0;
+            margin: 0;
+        }
         
         .contenedor-icon {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
-            margin-top: 20px;
+            padding: 20px;
         }
         
         .iconos {
-            background: #F2F2F2;
+            background: #e4e4e4;
             width: 100px;
             padding: 24px 45px;
         }
@@ -106,13 +114,40 @@
         }
 
         .left-side {
+            position: relative;
             width: 50%;
-            padding: 30px;
             background-color: #d3d6d8;
+            padding: 30px;
+            z-index: 2;
+        }
+
+        .left-side::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            border-top: 230px solid transparent;
+            border-left: 30px solid #d3d6d8;
+            margin-right: -30px;
+            z-index: 1;
         }
         
         .right-side {
             width: 50%;
+            position: relative;
+            z-index: 0;
+        }
+
+        .right-side::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            margin-left: 14px;
+            border-top: 230px solid transparent;
+            border-left: 15px solid #bf00105d;
+            transform: rotate(353deg);
+            object-fit: cover;
         }
 
         .right-side img {
@@ -125,8 +160,10 @@
         }
         
         footer {
+            position: relative;
             background-color: #000;
             min-height: 100px;
+            z-index: 2;
         }
         
         .foot_social {
@@ -186,17 +223,22 @@
                     <img src="assets/img/logo_hinoconnect.png" width="120" alt="logo hino connect">
                 </figure>
             </section>
-            <section class="contenedor-icon">
-                <div class="iconos">
-                    <a href="/camion-aljibe"> <img src="assets/img/icon_CL_APLICACION-camion_aljibe_hino.svg" alt="image-beneficios" class="card-normal"></a>
-                    <a href="/camion-aljibe"> <h3 name="Camión Aljibe" id="Camión Aljibe" rows="3" class="text-icon"><p style="text-align: center;">Camión Aljibe</p></h3></a>
-                </div>
-                <div class="iconos">
-                    <a href="/camion-aljibe"> <img src="assets/img/icon_CL_APLICACION-camion_aljibe_hino.svg" alt="image-beneficios" class="card-normal"></a>
-                    <a href="/camion-aljibe"> <h3 name="Camión Aljibe" id="Camión Aljibe" rows="3" class="text-icon"><p style="text-align: center;">Camión Aljibe</p></h3></a>
-                </div>
-            </section>
         </div>
+        <section class="contenedor-iconos-section">
+            <div class="centrar">
+                <h2>USOS Y APLICACIONES</h2>
+            </div>
+            <div class="contenedor-icon">
+                <div class="iconos">
+                    <a href="/camion-aljibe"> <img src="assets/img/icon_CL_APLICACION-camion_aljibe_hino.svg" alt="image-beneficios" class="card-normal"></a>
+                    <a href="/camion-aljibe"> <h3 name="Camión Aljibe" id="Camión Aljibe" rows="3" class="text-icon"><p style="text-align: center;">Camión Aljibe</p></h3></a>
+                </div>
+                <div class="iconos">
+                    <a href="/camion-aljibe"> <img src="assets/img/icon_CL_APLICACION-camion_aljibe_hino.svg" alt="image-beneficios" class="card-normal"></a>
+                    <a href="/camion-aljibe"> <h3 name="Camión Aljibe" id="Camión Aljibe" rows="3" class="text-icon"><p style="text-align: center;">Camión Aljibe</p></h3></a>
+                </div>
+            </div>
+        </section>
         <section class="banner">
             <div class="left-side">
                 <h2>Lorem ipsum dolor sit amet.</h2>
