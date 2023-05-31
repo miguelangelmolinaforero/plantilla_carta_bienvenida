@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hino Carta Bienvenida</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: transparent;
+            font-size: 0.8em;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            border: 1px solid #343434;
+            background-color: white;
+        }
+
+        header {
+            background-color: #BF0010;
+            min-height: 130px;
+            text-align: center;
+        }
+
+        figure {
+            margin: auto 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            padding: 10px 20px;
+            max-height: 30px;
+            margin: auto 0;
+        }
+        
+        .body-container {
+            margin: 3% 10%;
+            text-align: justify;
+        }
+
+        .contact-section {
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        p {
+            color: #343434;
+        }
+        
+        
+        
+        .contenedor-icon {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .iconos {
+            background: #F2F2F2;
+            width: 100px;
+            padding: 24px 45px;
+        }
+
+        .iconos:hover {
+            background-color: #e3c4c6;
+            transition: .3s;
+        }
+
+        .banner {
+            display: flex;
+        }
+        
+        .banner a:hover {
+            background-color: #f2f2f2;
+            transition: .3s;
+            color: #BF0010;
+            font-weight: bolder;
+        }
+        
+        .banner h2 {
+            color: #343434;
+            text-transform: uppercase;
+        }
+        
+        .banner p {
+            color: #343434;
+            font-size: 0.9em;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+        
+        .banner a {
+            margin: 10px;
+            text-decoration: none;
+            padding: 5px 15px;
+            background-color: #BF0010;
+        }
+
+        .left-side {
+            width: 50%;
+            padding: 30px;
+            background-color: #f2f2f2;
+        }
+        
+        .right-side {
+            width: 50%;
+        }
+
+        .right-side img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .centrar {
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #000;
+            min-height: 100px;
+        }
+        
+        .foot_social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            margin-right: 20px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <figure>
+                <img src="assets/img/image_logo_hino.png" width="80" alt="Logo Hino">
+            </figure>
+            <h1>
+                [tituloCarta]
+            </h1>
+        </header>
+        <div class="body-container">
+            <section>
+                <span class="saludo">[saludo]</span>
+                <h3>[titulo]</h3>
+                <p>
+                    [cuerpo]
+
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati alias perferendis eveniet architecto, consequatur maiores eos, velit assumenda labore atque optio dolore nihil delectus consequuntur corrupti beatae omnis, repellendus repellat.
+                </p>
+            </section>
+            <section class="user-data-section">
+                <ul>
+                    <li>Nombre Cliente: [NombreCliente]</li>
+                    <li>VIN Unidad: [VIN]</li>
+                    <li>URL: [Url]</li>
+                    <li>Usuario: [Password]</li>
+                </ul>
+                <span>*Nota: Por seguridad, al ingresar por primera vez modifique su contraseña de acceso. Les recordamos que el servicio es gratis por [periodoServicio] años, desde el momento de la activación. </span>
+            </section>
+            <section class="contact-section">
+                <span>Para resolver todas sus consultas, favor comunicarse a los siguientes contactos:</span>
+                <ul>
+                    <li>Nombre Contacto: [NombreContacto], [CargoContacto]</li>
+                    <li>[EmailContacto]</li>
+                    <li>[TelefonoContacto]</li>
+                </ul>
+                <span>[piePaginaTexto]</span>
+                <figure>
+                    <img src="assets/img/logo_hinoconnect.png" width="120" alt="logo hino connect">
+                </figure>
+            </section>
+            <section class="contenedor-icon">
+                <div class="iconos">
+                    <a href="/camion-aljibe"> <img src="assets/img/icon_CL_APLICACION-camion_aljibe_hino.svg" alt="image-beneficios" class="card-normal"></a>
+                    <a href="/camion-aljibe"> <h3 name="Camión Aljibe" id="Camión Aljibe" rows="3" class="text-icon"><p style="text-align: center;">Camión Aljibe</p></h3></a>
+                </div>
+                <div class="iconos">
+                    <a href="/camion-aljibe"> <img src="assets/img/icon_CL_APLICACION-camion_aljibe_hino.svg" alt="image-beneficios" class="card-normal"></a>
+                    <a href="/camion-aljibe"> <h3 name="Camión Aljibe" id="Camión Aljibe" rows="3" class="text-icon"><p style="text-align: center;">Camión Aljibe</p></h3></a>
+                </div>
+            </section>
+        </div>
+        <section class="banner">
+            <div class="left-side">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo numquam illum reprehenderit error quis vel neque velit expedita ducimus distinctio? Magnam nesciunt culpa dolorem sint iusto maiores praesentium quam voluptatibus.</p>
+                <div class="centrar">
+                    <a href="">Ver más</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <img src="assets/img/banner_image.jpg" alt="img banner">
+            </div>
+        </section>
+        <footer>
+            <div class="foot_social">
+                <div class="auxi">
+                    <ul style="margin: 0; list-style: none; padding: 0; display: flex; justify-content: end;">
+                        <li style="margin: 15px"><a href="https://www.facebook.com/HinoChile" target="_blank"><img src="assets/img/facebook_f.png" width="30" height="30" alt="<p>Facebook de Hino Chile</p>"></a></li>
+                        <li style="margin: 15px"><a href="https://www.linkedin.com/company/hino-chile/" target="_blank"><img src="assets/img/linkedin.png" width="30" height="30" alt="<p>LinkedIn de Hino Chile</p>"></a></li>
+                        <li style="margin: 15px"><a href="https://www.instagram.com/hino_chile" target="_blank"><img src="assets/img/instagram_f.png" width="30" height="30" alt="<p>Instagram de Hino Chile</p>"></a></li>
+                    </ul>
+                </div>
+                <a href="https://www.hino.cl/">www.hino.cl</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
